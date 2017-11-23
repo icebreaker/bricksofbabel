@@ -11,7 +11,6 @@ class Game extends Fz2D.Game
       push: 'push.ogg'
   
   plugins: [
-    Fz2D.Plugins.GoogleAnalytics,
     Fz2D.Plugins.GitHub,
     Fz2D.Plugins.Stats,
     Fz2D.Plugins.Box2D
@@ -20,9 +19,6 @@ class Game extends Fz2D.Game
   github:
     username: 'icebreaker'
     repository: 'bricksofbabel'
-
-  ga:
-    id: 'UA-3042007-2'
 
   onload: (game) ->
     game.input.mouse.hide() if Fz2D.production?
